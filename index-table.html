@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+
+</head>
+<body>
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#cmkebosdst .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#cmkebosdst .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cmkebosdst .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#cmkebosdst .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 4px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#cmkebosdst .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cmkebosdst .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cmkebosdst .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#cmkebosdst .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#cmkebosdst .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#cmkebosdst .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#cmkebosdst .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#cmkebosdst .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#cmkebosdst .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#cmkebosdst .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#cmkebosdst .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#cmkebosdst .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#cmkebosdst .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#cmkebosdst .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#cmkebosdst .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cmkebosdst .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#cmkebosdst .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cmkebosdst .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#cmkebosdst .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cmkebosdst .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cmkebosdst .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#cmkebosdst .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cmkebosdst .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#cmkebosdst .gt_left {
+  text-align: left;
+}
+
+#cmkebosdst .gt_center {
+  text-align: center;
+}
+
+#cmkebosdst .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#cmkebosdst .gt_font_normal {
+  font-weight: normal;
+}
+
+#cmkebosdst .gt_font_bold {
+  font-weight: bold;
+}
+
+#cmkebosdst .gt_font_italic {
+  font-style: italic;
+}
+
+#cmkebosdst .gt_super {
+  font-size: 65%;
+}
+
+#cmkebosdst .gt_footnote_marks {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="cmkebosdst" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <th colspan="13" class="gt_heading gt_title gt_font_normal" style="text-align: left;"><strong>ISM Manufacturing Indexes</strong></th>
+    </tr>
+    <tr>
+      <th colspan="13" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style></th>
+    </tr>
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="text-align: left; vertical-align: middle; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black;">Index</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black;">Sep 2019</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black;">Oct 2019</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black;">Nov 2019</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black;">Dec 2019</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black;">Jan 2020</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black;">Feb 2020</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black;">Mar 2020</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black;">Apr 2020</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black;">May 2020</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black;">Jun 2020</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black;">Jul 2020</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black;">Aug 2020</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr>
+      <td class="gt_row gt_left" style="text-align: left; vertical-align: middle;">napmpmi</td>
+      <td class="gt_row gt_right" style="background-color: #D9C8B3; color: #000000; text-align: center; vertical-align: middle;">48.2</td>
+      <td class="gt_row gt_right" style="background-color: #D7CBB5; color: #000000; text-align: center; vertical-align: middle;">48.5</td>
+      <td class="gt_row gt_right" style="background-color: #DAC7B2; color: #000000; text-align: center; vertical-align: middle;">48.1</td>
+      <td class="gt_row gt_right" style="background-color: #DBC5AF; color: #000000; text-align: center; vertical-align: middle;">47.8</td>
+      <td class="gt_row gt_right" style="background-color: #C6D5BB; color: #000000; text-align: center; vertical-align: middle;">50.9</td>
+      <td class="gt_row gt_right" style="background-color: #CCD3BC; color: #000000; text-align: center; vertical-align: middle;">50.1</td>
+      <td class="gt_row gt_right" style="background-color: #D4D0BB; color: #000000; text-align: center; vertical-align: middle;">49.1</td>
+      <td class="gt_row gt_right" style="background-color: #F49078; color: #000000; text-align: center; vertical-align: middle;">41.5</td>
+      <td class="gt_row gt_right" style="background-color: #F09D85; color: #000000; text-align: center; vertical-align: middle;">43.1</td>
+      <td class="gt_row gt_right" style="background-color: #B7D0AB; color: #000000; text-align: center; vertical-align: middle;">52.6</td>
+      <td class="gt_row gt_right" style="background-color: #A9CB9C; color: #000000; text-align: center; vertical-align: middle;">54.2</td>
+      <td class="gt_row gt_right" style="background-color: #99C68B; color: #000000; text-align: center; vertical-align: middle;">56.0</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="text-align: left; vertical-align: middle;">napmnewo</td>
+      <td class="gt_row gt_right" style="background-color: #D7CBB5; color: #000000; text-align: center; vertical-align: middle;">48.5</td>
+      <td class="gt_row gt_right" style="background-color: #D5CEB9; color: #000000; text-align: center; vertical-align: middle;">48.9</td>
+      <td class="gt_row gt_right" style="background-color: #E1BDA6; color: #000000; text-align: center; vertical-align: middle;">46.8</td>
+      <td class="gt_row gt_right" style="background-color: #DDC3AD; color: #000000; text-align: center; vertical-align: middle;">47.6</td>
+      <td class="gt_row gt_right" style="background-color: #BDD2B1; color: #000000; text-align: center; vertical-align: middle;">52.0</td>
+      <td class="gt_row gt_right" style="background-color: #CFD3BC; color: #000000; text-align: center; vertical-align: middle;">49.8</td>
+      <td class="gt_row gt_right" style="background-color: #F2967E; color: #000000; text-align: center; vertical-align: middle;">42.2</td>
+      <td class="gt_row gt_right" style="background-color: #D03341; color: #FFFFFF; text-align: center; vertical-align: middle;">27.1</td>
+      <td class="gt_row gt_right" style="background-color: #E74C4A; color: #FFFFFF; text-align: center; vertical-align: middle;">31.8</td>
+      <td class="gt_row gt_right" style="background-color: #96C588; color: #000000; text-align: center; vertical-align: middle;">56.4</td>
+      <td class="gt_row gt_right" style="background-color: #6CB463; color: #000000; text-align: center; vertical-align: middle;">61.5</td>
+      <td class="gt_row gt_right" style="background-color: #4F9A54; color: #FFFFFF; text-align: center; vertical-align: middle;">67.6</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="text-align: left; vertical-align: middle;">napmprod</td>
+      <td class="gt_row gt_right" style="background-color: #D8CAB4; color: #000000; text-align: center; vertical-align: middle;">48.4</td>
+      <td class="gt_row gt_right" style="background-color: #E3B9A1; color: #000000; text-align: center; vertical-align: middle;">46.3</td>
+      <td class="gt_row gt_right" style="background-color: #DAC7B1; color: #000000; text-align: center; vertical-align: middle;">48.0</td>
+      <td class="gt_row gt_right" style="background-color: #E9AD95; color: #000000; text-align: center; vertical-align: middle;">44.8</td>
+      <td class="gt_row gt_right" style="background-color: #A8CB9B; color: #000000; text-align: center; vertical-align: middle;">54.3</td>
+      <td class="gt_row gt_right" style="background-color: #CBD4BC; color: #000000; text-align: center; vertical-align: middle;">50.3</td>
+      <td class="gt_row gt_right" style="background-color: #DCC4AE; color: #000000; text-align: center; vertical-align: middle;">47.7</td>
+      <td class="gt_row gt_right" style="background-color: #D33541; color: #FFFFFF; text-align: center; vertical-align: middle;">27.5</td>
+      <td class="gt_row gt_right" style="background-color: #EA564F; color: #000000; text-align: center; vertical-align: middle;">33.2</td>
+      <td class="gt_row gt_right" style="background-color: #8DC280; color: #000000; text-align: center; vertical-align: middle;">57.3</td>
+      <td class="gt_row gt_right" style="background-color: #69B162; color: #000000; text-align: center; vertical-align: middle;">62.1</td>
+      <td class="gt_row gt_right" style="background-color: #64AC5E; color: #000000; text-align: center; vertical-align: middle;">63.3</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="text-align: left; vertical-align: middle;">napmempl</td>
+      <td class="gt_row gt_right" style="background-color: #E2BBA3; color: #000000; text-align: center; vertical-align: middle;">46.5</td>
+      <td class="gt_row gt_right" style="background-color: #DBC6B0; color: #000000; text-align: center; vertical-align: middle;">47.9</td>
+      <td class="gt_row gt_right" style="background-color: #E1BDA6; color: #000000; text-align: center; vertical-align: middle;">46.8</td>
+      <td class="gt_row gt_right" style="background-color: #E8B098; color: #000000; text-align: center; vertical-align: middle;">45.2</td>
+      <td class="gt_row gt_right" style="background-color: #E2BCA4; color: #000000; text-align: center; vertical-align: middle;">46.6</td>
+      <td class="gt_row gt_right" style="background-color: #E0BEA7; color: #000000; text-align: center; vertical-align: middle;">46.9</td>
+      <td class="gt_row gt_right" style="background-color: #EDA48C; color: #000000; text-align: center; vertical-align: middle;">43.8</td>
+      <td class="gt_row gt_right" style="background-color: #D33541; color: #FFFFFF; text-align: center; vertical-align: middle;">27.5</td>
+      <td class="gt_row gt_right" style="background-color: #E84F4B; color: #FFFFFF; text-align: center; vertical-align: middle;">32.1</td>
+      <td class="gt_row gt_right" style="background-color: #F3957D; color: #000000; text-align: center; vertical-align: middle;">42.1</td>
+      <td class="gt_row gt_right" style="background-color: #EBA890; color: #000000; text-align: center; vertical-align: middle;">44.3</td>
+      <td class="gt_row gt_right" style="background-color: #E3BAA2; color: #000000; text-align: center; vertical-align: middle;">46.4</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="text-align: left; vertical-align: middle;">napmsupl</td>
+      <td class="gt_row gt_right" style="background-color: #C3D4B7; color: #000000; text-align: center; vertical-align: middle;">51.3</td>
+      <td class="gt_row gt_right" style="background-color: #CCD3BC; color: #000000; text-align: center; vertical-align: middle;">50.1</td>
+      <td class="gt_row gt_right" style="background-color: #BFD3B4; color: #000000; text-align: center; vertical-align: middle;">51.7</td>
+      <td class="gt_row gt_right" style="background-color: #BBD1AF; color: #000000; text-align: center; vertical-align: middle;">52.2</td>
+      <td class="gt_row gt_right" style="background-color: #B5CFA8; color: #000000; text-align: center; vertical-align: middle;">52.9</td>
+      <td class="gt_row gt_right" style="background-color: #8DC280; color: #000000; text-align: center; vertical-align: middle;">57.3</td>
+      <td class="gt_row gt_right" style="background-color: #5CA55A; color: #000000; text-align: center; vertical-align: middle;">65.0</td>
+      <td class="gt_row gt_right" style="background-color: #317944; color: #FFFFFF; text-align: center; vertical-align: middle;">76.0</td>
+      <td class="gt_row gt_right" style="background-color: #4E9953; color: #FFFFFF; text-align: center; vertical-align: middle;">68.0</td>
+      <td class="gt_row gt_right" style="background-color: #91C383; color: #000000; text-align: center; vertical-align: middle;">56.9</td>
+      <td class="gt_row gt_right" style="background-color: #9BC78D; color: #000000; text-align: center; vertical-align: middle;">55.8</td>
+      <td class="gt_row gt_right" style="background-color: #85C077; color: #000000; text-align: center; vertical-align: middle;">58.2</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="text-align: left; vertical-align: middle;">napminv</td>
+      <td class="gt_row gt_right" style="background-color: #E3B9A1; color: #000000; text-align: center; vertical-align: middle;">46.3</td>
+      <td class="gt_row gt_right" style="background-color: #D2D1BC; color: #000000; text-align: center; vertical-align: middle;">49.4</td>
+      <td class="gt_row gt_right" style="background-color: #DFC0AA; color: #000000; text-align: center; vertical-align: middle;">47.2</td>
+      <td class="gt_row gt_right" style="background-color: #D3D1BC; color: #000000; text-align: center; vertical-align: middle;">49.2</td>
+      <td class="gt_row gt_right" style="background-color: #D6CDB8; color: #000000; text-align: center; vertical-align: middle;">48.8</td>
+      <td class="gt_row gt_right" style="background-color: #E2BBA3; color: #000000; text-align: center; vertical-align: middle;">46.5</td>
+      <td class="gt_row gt_right" style="background-color: #E0BEA7; color: #000000; text-align: center; vertical-align: middle;">46.9</td>
+      <td class="gt_row gt_right" style="background-color: #CFD2BC; color: #000000; text-align: center; vertical-align: middle;">49.7</td>
+      <td class="gt_row gt_right" style="background-color: #CAD4BC; color: #000000; text-align: center; vertical-align: middle;">50.4</td>
+      <td class="gt_row gt_right" style="background-color: #C9D4BC; color: #000000; text-align: center; vertical-align: middle;">50.5</td>
+      <td class="gt_row gt_right" style="background-color: #E0BFA8; color: #000000; text-align: center; vertical-align: middle;">47.0</td>
+      <td class="gt_row gt_right" style="background-color: #EBA991; color: #000000; text-align: center; vertical-align: middle;">44.4</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="text-align: left; vertical-align: middle;">napmcinv</td>
+      <td class="gt_row gt_right" style="background-color: #E7B39A; color: #000000; text-align: center; vertical-align: middle;">45.5</td>
+      <td class="gt_row gt_right" style="background-color: #DBC5AF; color: #000000; text-align: center; vertical-align: middle;">47.8</td>
+      <td class="gt_row gt_right" style="background-color: #E9AE96; color: #000000; text-align: center; vertical-align: middle;">45.0</td>
+      <td class="gt_row gt_right" style="background-color: #F58C74; color: #000000; text-align: center; vertical-align: middle;">41.1</td>
+      <td class="gt_row gt_right" style="background-color: #EDA48C; color: #000000; text-align: center; vertical-align: middle;">43.8</td>
+      <td class="gt_row gt_right" style="background-color: #F3927A; color: #000000; text-align: center; vertical-align: middle;">41.8</td>
+      <td class="gt_row gt_right" style="background-color: #EFA088; color: #000000; text-align: center; vertical-align: middle;">43.4</td>
+      <td class="gt_row gt_right" style="background-color: #D6CDB8; color: #000000; text-align: center; vertical-align: middle;">48.8</td>
+      <td class="gt_row gt_right" style="background-color: #E4B8A0; color: #000000; text-align: center; vertical-align: middle;">46.2</td>
+      <td class="gt_row gt_right" style="background-color: #EAAB93; color: #000000; text-align: center; vertical-align: middle;">44.6</td>
+      <td class="gt_row gt_right" style="background-color: #F49179; color: #000000; text-align: center; vertical-align: middle;">41.6</td>
+      <td class="gt_row gt_right" style="background-color: #F47663; color: #000000; text-align: center; vertical-align: middle;">38.1</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="text-align: left; vertical-align: middle;">napmpric</td>
+      <td class="gt_row gt_right" style="background-color: #CFD2BC; color: #000000; text-align: center; vertical-align: middle;">49.7</td>
+      <td class="gt_row gt_right" style="background-color: #E7B39A; color: #000000; text-align: center; vertical-align: middle;">45.5</td>
+      <td class="gt_row gt_right" style="background-color: #E1BCA5; color: #000000; text-align: center; vertical-align: middle;">46.7</td>
+      <td class="gt_row gt_right" style="background-color: #BFD3B4; color: #000000; text-align: center; vertical-align: middle;">51.7</td>
+      <td class="gt_row gt_right" style="background-color: #B1CEA4; color: #000000; text-align: center; vertical-align: middle;">53.3</td>
+      <td class="gt_row gt_right" style="background-color: #E5B69E; color: #000000; text-align: center; vertical-align: middle;">45.9</td>
+      <td class="gt_row gt_right" style="background-color: #F37260; color: #000000; text-align: center; vertical-align: middle;">37.4</td>
+      <td class="gt_row gt_right" style="background-color: #EF6458; color: #000000; text-align: center; vertical-align: middle;">35.3</td>
+      <td class="gt_row gt_right" style="background-color: #F68972; color: #000000; text-align: center; vertical-align: middle;">40.8</td>
+      <td class="gt_row gt_right" style="background-color: #C3D4B7; color: #000000; text-align: center; vertical-align: middle;">51.3</td>
+      <td class="gt_row gt_right" style="background-color: #B2CEA5; color: #000000; text-align: center; vertical-align: middle;">53.2</td>
+      <td class="gt_row gt_right" style="background-color: #78BC6C; color: #000000; text-align: center; vertical-align: middle;">59.5</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="text-align: left; vertical-align: middle;">napmback</td>
+      <td class="gt_row gt_right" style="background-color: #E8AF97; color: #000000; text-align: center; vertical-align: middle;">45.1</td>
+      <td class="gt_row gt_right" style="background-color: #ECA68E; color: #000000; text-align: center; vertical-align: middle;">44.1</td>
+      <td class="gt_row gt_right" style="background-color: #F09C84; color: #000000; text-align: center; vertical-align: middle;">43.0</td>
+      <td class="gt_row gt_right" style="background-color: #EF9F87; color: #000000; text-align: center; vertical-align: middle;">43.3</td>
+      <td class="gt_row gt_right" style="background-color: #E6B49C; color: #000000; text-align: center; vertical-align: middle;">45.7</td>
+      <td class="gt_row gt_right" style="background-color: #CBD4BC; color: #000000; text-align: center; vertical-align: middle;">50.3</td>
+      <td class="gt_row gt_right" style="background-color: #E5B69E; color: #000000; text-align: center; vertical-align: middle;">45.9</td>
+      <td class="gt_row gt_right" style="background-color: #F47462; color: #000000; text-align: center; vertical-align: middle;">37.8</td>
+      <td class="gt_row gt_right" style="background-color: #F47664; color: #000000; text-align: center; vertical-align: middle;">38.2</td>
+      <td class="gt_row gt_right" style="background-color: #E7B199; color: #000000; text-align: center; vertical-align: middle;">45.3</td>
+      <td class="gt_row gt_right" style="background-color: #BED2B3; color: #000000; text-align: center; vertical-align: middle;">51.8</td>
+      <td class="gt_row gt_right" style="background-color: #A6CA98; color: #000000; text-align: center; vertical-align: middle;">54.6</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="text-align: left; vertical-align: middle;">napmexpt</td>
+      <td class="gt_row gt_right" style="background-color: #F58B73; color: #000000; text-align: center; vertical-align: middle;">41.0</td>
+      <td class="gt_row gt_right" style="background-color: #CAD4BC; color: #000000; text-align: center; vertical-align: middle;">50.4</td>
+      <td class="gt_row gt_right" style="background-color: #DBC6B0; color: #000000; text-align: center; vertical-align: middle;">47.9</td>
+      <td class="gt_row gt_right" style="background-color: #DEC1AA; color: #000000; text-align: center; vertical-align: middle;">47.3</td>
+      <td class="gt_row gt_right" style="background-color: #B1CEA4; color: #000000; text-align: center; vertical-align: middle;">53.3</td>
+      <td class="gt_row gt_right" style="background-color: #C3D4B8; color: #000000; text-align: center; vertical-align: middle;">51.2</td>
+      <td class="gt_row gt_right" style="background-color: #E2BCA4; color: #000000; text-align: center; vertical-align: middle;">46.6</td>
+      <td class="gt_row gt_right" style="background-color: #EF6458; color: #000000; text-align: center; vertical-align: middle;">35.3</td>
+      <td class="gt_row gt_right" style="background-color: #F77E69; color: #000000; text-align: center; vertical-align: middle;">39.5</td>
+      <td class="gt_row gt_right" style="background-color: #DDC3AD; color: #000000; text-align: center; vertical-align: middle;">47.6</td>
+      <td class="gt_row gt_right" style="background-color: #CAD4BC; color: #000000; text-align: center; vertical-align: middle;">50.4</td>
+      <td class="gt_row gt_right" style="background-color: #B1CEA4; color: #000000; text-align: center; vertical-align: middle;">53.3</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left" style="text-align: left; vertical-align: middle;">napmimpt</td>
+      <td class="gt_row gt_right" style="background-color: #DAC7B2; color: #000000; text-align: center; vertical-align: middle;">48.1</td>
+      <td class="gt_row gt_right" style="background-color: #E7B199; color: #000000; text-align: center; vertical-align: middle;">45.3</td>
+      <td class="gt_row gt_right" style="background-color: #D9C9B4; color: #000000; text-align: center; vertical-align: middle;">48.3</td>
+      <td class="gt_row gt_right" style="background-color: #D6CDB8; color: #000000; text-align: center; vertical-align: middle;">48.8</td>
+      <td class="gt_row gt_right" style="background-color: #C3D4B7; color: #000000; text-align: center; vertical-align: middle;">51.3</td>
+      <td class="gt_row gt_right" style="background-color: #F19981; color: #000000; text-align: center; vertical-align: middle;">42.6</td>
+      <td class="gt_row gt_right" style="background-color: #F3957D; color: #000000; text-align: center; vertical-align: middle;">42.1</td>
+      <td class="gt_row gt_right" style="background-color: #F19A82; color: #000000; text-align: center; vertical-align: middle;">42.7</td>
+      <td class="gt_row gt_right" style="background-color: #F58E76; color: #000000; text-align: center; vertical-align: middle;">41.3</td>
+      <td class="gt_row gt_right" style="background-color: #D6CDB8; color: #000000; text-align: center; vertical-align: middle;">48.8</td>
+      <td class="gt_row gt_right" style="background-color: #B3CEA6; color: #000000; text-align: center; vertical-align: middle;">53.1</td>
+      <td class="gt_row gt_right" style="background-color: #9DC78F; color: #000000; text-align: center; vertical-align: middle;">55.6</td>
+    </tr>
+  </tbody>
+  
+  
+</table></div>
+</body>
+</html>
