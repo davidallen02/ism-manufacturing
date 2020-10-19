@@ -60,6 +60,6 @@ t <- dat %>%
     locations = list(gt::cells_column_labels(gt::everything()))
   )
 
-t 
+save(t, file = paste0("output/tam/index-table.RData"))
 
 t %>% gt::gtsave("output/tables/index-table.png")
